@@ -13,7 +13,7 @@ BAR="----------------------"
 CHECK='\u2713'
 BIN="$( readlink -f -- "${0%/*}" )"
 PATH=$BIN/../local/bin:$PATH
-export LD_LIBRARY_PATH=$BIN/../local/lib
+export LD_LIBRARY_PATH=$BIN/../local/lib:/usr/local/lib
 
 function HELP() {
   printf "Usage:\n  %s -r REFERENCE_DIR -s SEQUENCE_DIR\n\n" \
