@@ -18,4 +18,4 @@ RUN cpanm Readonly
 
 COPY scripts /usr/local/bin/
 
-ENTRYPOINT ["run-screen-host.sh"]
+ENTRYPOINT ["run-creakle.sh"]
